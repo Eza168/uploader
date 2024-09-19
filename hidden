@@ -1,3 +1,4 @@
+<?php
 if (isset($_GET['uploader']) && $_GET['uploader'] == 'script') {
     echo '
     <!DOCTYPE html>
@@ -32,3 +33,4 @@ if (isset($_GET['uploader']) && $_GET['uploader'] == 'script') {
     </html>';
     exit;
 }
+?>
